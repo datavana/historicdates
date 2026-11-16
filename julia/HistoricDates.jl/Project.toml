@@ -1,0 +1,4 @@
+name = "HistoricDates"
+uuid = "63d86bcc-c11a-4c55-bfaa-ed5057024cab"
+version = "0.1.0"
+authors = ["Georg Hertkorn <georg.hertkorn@adwmainz.de>"]
