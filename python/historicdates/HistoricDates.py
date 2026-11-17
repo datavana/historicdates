@@ -47,7 +47,6 @@ class HistoricDates:
     MODIFIER_AFTER = 'nach'
     MODIFIER_BEFORE = 'vor'
 
-    DATE_TIME_FORMAT = 'Y-m-d\TH:i:s'
     PRIORITY_END = 0x001
     PRIORITY_AROUND = 0x002
     PRIORITY_EARLIER = 0x002
