@@ -3,7 +3,7 @@
 The classes in this repository convert natural-language dates into a structured
 format and generate a sort key that serves as the basis for chronological
 sorting. The code is available for the programming languages PHP, JS, and Python
-(coming soon).
+(coming soon). See below for implementation details.
 
 Dates must be entered according to the defined patterns shown in the examples below.
 When entering a date, Epigraf parses and normalizes upper and lower case, spaces and selected abbreviations.
@@ -478,3 +478,7 @@ The table contains examples of date entries, along with the time period assigned
 </table>
 </figure>
 
+## Implementation details for PHP and JavaScript
+A procedural version is located in the 'functional' directory. HistoricDates is a single class with static methods that uses array structures to represent dates. EMPTY_DATE is a template container for date components and EMPTY_DATE_ARRAY is a template container for date ranges. The key methods are normalize(), encode(), parseHistoricDateList(), and parseHistoricDateRange().
+
+A more object-oriented version is located in the "src" directory. The DateComponent and DateRange classes replace the EMPTY_DATE and EMPTY_DATE_ARRAY associative arrays from the functional version. These classes encapsulate date component and range logic in typed class structures. While the functional version stores data in plain arrays, these classes provide type safety through PHP type hints, method-based operations, and proper encapsulation.
